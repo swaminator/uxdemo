@@ -2,6 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  async function getTodo() {
+    const models = await DataStore.query(Todo);
+    console.log(models);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
