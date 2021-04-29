@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { DataStore } from "aws-amplify"
+import { Todo } from "./models"
 
 function App() {
   async function getTodo() {
@@ -7,6 +9,7 @@ function App() {
     console.log(models);
   }
 
+  getTodo()
   return (
     <div className="App">
       <header className="App-header">
